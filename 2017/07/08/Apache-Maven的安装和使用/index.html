@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Database," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -90,17 +90,16 @@
 
 
 
-<meta name="description" content="Creating a new table for JSON data1234CREATE TABLE orders( ID SERIAL NOT NULL PRIMARY KEY, info json NOT NULL); Insert JSON data12345678INSERT INTO orders(info)VALUES(&amp;apos;&amp;#123;&amp;quot;customer&amp;quot;:">
-<meta name="keywords" content="Database">
+<meta name="description" content="安装 官网下载安装包，解压。 配置JDK和M2_HOME。12345export M2_HOME=安装包路径export PATH=$PATH:$M2_HOME/binecho M2_HOMEmvn -vmvn help:system   创建maven项目 创建mvn archetype:generate -DgroupId=com.codoter.example -DartifactId=ex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PostgreSQL JSON">
-<meta property="og:url" content="http://yoursite.com/2017/06/15/POSTGRESQL-JSON/index.html">
+<meta property="og:title" content="Apache Maven的安装和使用">
+<meta property="og:url" content="http://yoursite.com/2017/07/08/Apache-Maven的安装和使用/index.html">
 <meta property="og:site_name" content="Codoter&#39;s Blog">
-<meta property="og:description" content="Creating a new table for JSON data1234CREATE TABLE orders( ID SERIAL NOT NULL PRIMARY KEY, info json NOT NULL); Insert JSON data12345678INSERT INTO orders(info)VALUES(&amp;apos;&amp;#123;&amp;quot;customer&amp;quot;:">
-<meta property="og:updated_time" content="2017-06-15T01:04:55.397Z">
+<meta property="og:description" content="安装 官网下载安装包，解压。 配置JDK和M2_HOME。12345export M2_HOME=安装包路径export PATH=$PATH:$M2_HOME/binecho M2_HOMEmvn -vmvn help:system   创建maven项目 创建mvn archetype:generate -DgroupId=com.codoter.example -DartifactId=ex">
+<meta property="og:updated_time" content="2017-07-08T01:48:18.993Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PostgreSQL JSON">
-<meta name="twitter:description" content="Creating a new table for JSON data1234CREATE TABLE orders( ID SERIAL NOT NULL PRIMARY KEY, info json NOT NULL); Insert JSON data12345678INSERT INTO orders(info)VALUES(&amp;apos;&amp;#123;&amp;quot;customer&amp;quot;:">
+<meta name="twitter:title" content="Apache Maven的安装和使用">
+<meta name="twitter:description" content="安装 官网下载安装包，解压。 配置JDK和M2_HOME。12345export M2_HOME=安装包路径export PATH=$PATH:$M2_HOME/binecho M2_HOMEmvn -vmvn help:system   创建maven项目 创建mvn archetype:generate -DgroupId=com.codoter.example -DartifactId=ex">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/15/POSTGRESQL-JSON/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/08/Apache-Maven的安装和使用/"/>
 
 
 
 
 
-  <title>PostgreSQL JSON | Codoter's Blog</title>
+  <title>Apache Maven的安装和使用 | Codoter's Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -254,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/15/POSTGRESQL-JSON/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/08/Apache-Maven的安装和使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Codoter">
@@ -271,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PostgreSQL JSON</h1>
+          <h1 class="post-title" itemprop="name headline">Apache Maven的安装和使用</h1>
         
 
         <div class="post-meta">
@@ -283,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T09:00:17+08:00">
-                2017-06-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T09:47:34+08:00">
+                2017-07-08
               </time>
             
 
@@ -318,15 +317,42 @@
       
 
       
-        <h3 id="Creating-a-new-table-for-JSON-data"><a href="#Creating-a-new-table-for-JSON-data" class="headerlink" title="Creating a new table for JSON data"></a>Creating a new table for JSON data</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">CREATE TABLE orders(</div><div class="line"> ID SERIAL NOT NULL PRIMARY KEY,</div><div class="line"> info json NOT NULL</div><div class="line">);</div></pre></td></tr></table></figure>
-<h3 id="Insert-JSON-data"><a href="#Insert-JSON-data" class="headerlink" title="Insert JSON data"></a>Insert JSON data</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">INSERT INTO orders(info)</div><div class="line">VALUES</div><div class="line">(</div><div class="line">&apos;&#123;&quot;customer&quot;:&quot;John&quot;, &quot;items&quot;:&#123;&quot;product&quot;:&quot;Beer&quot;,&quot;qty&quot;:6&#125;&#125;&apos;</div><div class="line">),</div><div class="line">(</div><div class="line">&apos;&#123; &quot;customer&quot;: &quot;Mary&quot;, &quot;items&quot;: &#123;&quot;product&quot;: &quot;Toy Car&quot;,&quot;qty&quot;: 1&#125;&#125;&apos;</div><div class="line">);</div></pre></td></tr></table></figure>
-<h3 id="Querying-JSON-data"><a href="#Querying-JSON-data" class="headerlink" title="Querying JSON data"></a>Querying JSON data</h3><p><code>SELECT info FROM orders;</code></p>
-<p>PostgreSQL 提供了两种运算符-&gt;和-&gt;&gt;。<br>“-&gt;”获取JSON对象指定字段的值；<br>“-&gt;&gt;”获取JSON对象指定字段的值为文本；<br>“#&gt;” 获取指定路径的JSON对象；<br>“#&gt;&gt;” 获取指定路径的JSON对象为文本；<br><code>SELECT info-&gt;&#39;customer&#39; AS customer FROM orders;</code><br><code>SELECT info-&gt;&gt;&#39;customer&#39; AS customer FROM orders;</code><br><code>SELECT info#&gt;&#39;{items,product}&#39; AS product FROM orders;</code><br><code>SELECT info#&gt;&gt;&#39;{items,product}&#39; AS product FROM orders;</code><br>“-&gt;”返回的是JSON object,查询复杂JSON数据时可以使用：<br><code>SELECT info-&gt;&#39;items&#39;-&gt;&gt;&#39;product&#39; AS product FROM orders ORDER BY product;</code><br>“info-&gt;’items’返回items的JSON object，然后”-&gt;&gt;’product’”返回所有product的文本。</p>
-<h3 id="IN-WHERE-CLAUSE"><a href="#IN-WHERE-CLAUSE" class="headerlink" title="IN WHERE CLAUSE"></a>IN WHERE CLAUSE</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">SELECT</div><div class="line"> info-&gt;&gt;&apos;customer&apos; AS customer,</div><div class="line"> info-&gt;&apos;items&apos;-&gt;&gt;&apos;product&apos; AS product</div><div class="line">FROM </div><div class="line"> orders</div><div class="line">WHERE </div><div class="line"> CAST(</div><div class="line"> info-&gt;&apos;items&apos;-&gt;&gt;&apos;qty&apos; AS INTEGER</div><div class="line"> )=2;</div></pre></td></tr></table></figure>
-<h3 id="Aggregate-functions"><a href="#Aggregate-functions" class="headerlink" title="Aggregate functions"></a>Aggregate functions</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">SELECT</div><div class="line"> MIN (</div><div class="line"> CAST (</div><div class="line"> info -&gt; &apos;items&apos; -&gt;&gt; &apos;qty&apos; AS INTEGER</div><div class="line"> )</div><div class="line"> ),</div><div class="line"> MAX (</div><div class="line"> CAST (</div><div class="line"> info -&gt; &apos;items&apos; -&gt;&gt; &apos;qty&apos; AS INTEGER</div><div class="line"> )</div><div class="line"> ),</div><div class="line"> SUM (</div><div class="line"> CAST (</div><div class="line"> info -&gt; &apos;items&apos; -&gt;&gt; &apos;qty&apos; AS INTEGER</div><div class="line"> )</div><div class="line"> ),</div><div class="line"> AVG (</div><div class="line"> CAST (</div><div class="line"> info -&gt; &apos;items&apos; -&gt;&gt; &apos;qty&apos; AS INTEGER</div><div class="line"> )</div><div class="line"> )</div><div class="line"> </div><div class="line">FROM</div><div class="line"> orders;</div></pre></td></tr></table></figure>
-<h3 id="PostgreSQL-JSON-functions"><a href="#PostgreSQL-JSON-functions" class="headerlink" title="PostgreSQL JSON functions"></a>PostgreSQL JSON functions</h3><p>json_each()方法可以将JSON对象拓展为键值对。<br><code>SELECT json_each(info) FROM orders;</code><br>文本格式：<br><code>SELECT json_each_text(info) FROM orders;</code></p>
-<p>json_object_keys()方法可以获取JSON对象最外层的键。<br><code>SELECT json_object_keys(info-&gt;&#39;items&#39;) FROM orders;</code></p>
-<p>json_typeof()方法返回JSON对象最外层值的类型（number,boolean,null,object,array,string)。<br><code>SELECT json_typeof(info-&gt;&#39;items&#39;) FROM orders;</code></p>
+        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
+<li>官网下载安装包，解压。</li>
+<li>配置JDK和M2_HOME。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export M2_HOME=安装包路径</div><div class="line">export PATH=$PATH:$M2_HOME/bin</div><div class="line">echo M2_HOME</div><div class="line">mvn -v</div><div class="line">mvn help:system</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="创建maven项目"><a href="#创建maven项目" class="headerlink" title="创建maven项目"></a>创建maven项目</h3><ul>
+<li><p>创建<br><code>mvn archetype:generate -DgroupId=com.codoter.example -DartifactId=example -Dpackage=com.codoter.example -Dversion=1.0-SNAPSHOT</code></p>
+</li>
+<li><p>打包（选择默认的maven-archetype-quickstart模型）<br><code>mvn package</code></p>
+</li>
+<li><p>运行<br><code>java -cp target/example-1.0-SNAPSHOT.jar com.codoter.example.App</code></p>
+</li>
+</ul>
+<h3 id="POM-Project-Object-Model"><a href="#POM-Project-Object-Model" class="headerlink" title="POM (Project Object Model)"></a>POM (Project Object Model)</h3><ul>
+<li>项目所有的配置都放置在pom文件中。定义项目类型、名字，依赖管理，定制插件的行为等。</li>
+</ul>
+<h3 id="Maven插件"><a href="#Maven插件" class="headerlink" title="Maven插件"></a>Maven插件</h3><ul>
+<li>使用mvn archetype:generate 命令来生成一个项目时，archetype是插件的名字，generate是目标。意思是maven执行archetype插件的generate目标。插件通常写成：pluginId:goalId。</li>
+<li>一个目标是一个工作单元，插件是一个或多个目标的集合。如Jar插件包含建立Jar文件的目标，Compiler插件包含编译源代码和单元测试代码的目标。Surefire插件则是运行单元测试。</li>
+</ul>
+<h3 id="Maven生命周期"><a href="#Maven生命周期" class="headerlink" title="Maven生命周期"></a>Maven生命周期</h3><ul>
+<li>打包时执行的命令：mvn package。这里的package指的是一个maven生命周期阶段（life phrase）。生命周期指的是项目的构件过程，包含了一些列的有序阶段。</li>
+<li>一个生命周期可以绑定多个插件目标，maven在构建过程中会执行每个阶段的所有插件目标。</li>
+</ul>
+<h3 id="Maven依赖管理"><a href="#Maven依赖管理" class="headerlink" title="Maven依赖管理"></a>Maven依赖管理</h3><ul>
+<li>在dependecies中定义依赖关系，用maven坐标来确定一个依赖。</li>
+<li>scope决定依赖关系适用范围。例如对于junit的scope为test，那么只有在执行compiler:testCompile and  surefire:test目标的时候才会被加入到classpath中执行。执行compiler:compile目标是拿不到junit的。</li>
+<li>当scope被指定为provided时，意思是JDK或者容器会提供所需的jar文件。比如web开发时，编译需要servlet API jar文件，但是打包的时候不需要把这个jar打在war中，因为servlet容器或者应用服务器会提供。</li>
+<li>scope默认值是compile，即在任何时候都会被包含在classpath中（包括打包）。</li>
+</ul>
+<h3 id="Maven库"><a href="#Maven库" class="headerlink" title="Maven库"></a>Maven库</h3><ul>
+<li>首次使用maven命令的时候会从maven默认的远程库（<a href="http://repo1.maven.org/maven2）下载一些核心插件和jar文件。" target="_blank" rel="external">http://repo1.maven.org/maven2）下载一些核心插件和jar文件。</a></li>
+<li>当默认远程库没有需要的jar文件时，有两种选择：自己手动下载和安装jar到本地库或者内部设置定制库。</li>
+<li>本地库(~/.m2/repository)。当maven查找需要的jar时，会先从本地库查找，找不到时再去远程库查找。</li>
+<li>mvn install可以把自己创建的项目安装到本地库，这样其他项目就可以通过maven坐标来建立依赖关系了。</li>
+</ul>
 
       
     </div>
@@ -354,12 +380,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Database/" rel="tag"># Database</a>
-          
-        </div>
-      
 
       
         
@@ -369,8 +389,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/16/Hello-World/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/06/15/POSTGRESQL-JSON/" rel="next" title="PostgreSQL JSON">
+                <i class="fa fa-chevron-left"></i> PostgreSQL JSON
               </a>
             
           </div>
@@ -378,10 +398,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/08/Apache-Maven的安装和使用/" rel="prev" title="Apache Maven的安装和使用">
-                Apache Maven的安装和使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -512,7 +528,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Creating-a-new-table-for-JSON-data"><span class="nav-number">1.</span> <span class="nav-text">Creating a new table for JSON data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Insert-JSON-data"><span class="nav-number">2.</span> <span class="nav-text">Insert JSON data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Querying-JSON-data"><span class="nav-number">3.</span> <span class="nav-text">Querying JSON data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IN-WHERE-CLAUSE"><span class="nav-number">4.</span> <span class="nav-text">IN WHERE CLAUSE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Aggregate-functions"><span class="nav-number">5.</span> <span class="nav-text">Aggregate functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PostgreSQL-JSON-functions"><span class="nav-number">6.</span> <span class="nav-text">PostgreSQL JSON functions</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建maven项目"><span class="nav-number">2.</span> <span class="nav-text">创建maven项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POM-Project-Object-Model"><span class="nav-number">3.</span> <span class="nav-text">POM (Project Object Model)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven插件"><span class="nav-number">4.</span> <span class="nav-text">Maven插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven生命周期"><span class="nav-number">5.</span> <span class="nav-text">Maven生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven依赖管理"><span class="nav-number">6.</span> <span class="nav-text">Maven依赖管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven库"><span class="nav-number">7.</span> <span class="nav-text">Maven库</span></a></li></ol></div>
             
 
           </div>
